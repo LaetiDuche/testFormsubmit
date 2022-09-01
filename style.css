@@ -1,33 +1,37 @@
-.titre-text,
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+
+.bloc-contact {
+  margin: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+
 .formulaire,
 .form-input {
   border-radius: 5px;
 }
 
-.titre-text,
+
 .form-input {
   box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
   background-color: #f5f5f5;
 }
 
-h1,
-  .text {
-    justify-content: center;
-  }
-h1 {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding-top: 2rem;
-}
-.text {
-  font-size: 1rem;
-  padding: 1.5rem;
-  text-align: justify;
-  line-height: 22px;
-}
 
 /* FORMULAIRE */
+
+
 .formulaire {
   margin: 2rem 0.5rem 2rem 0.5rem;
   background-color: #fff;
@@ -41,4 +45,56 @@ h1 {
 
 form .bouton {
   margin: 1rem 0;
+}
+
+button {
+  height: 2rem;
+  padding: 0 1rem;
+  background-color: #f845c5;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: all ease-in-out 0.3s;
+  outline: none;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.3s;
+}
+
+.success {
+  margin: auto;
+}
+
+/* FOCUS */
+.form-input:focus {
+  outline: none;
+  border: 1.5px solid #f845c5;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 600px) {
+  .formulaire {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .formulaire {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .bloc-contact {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }

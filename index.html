@@ -1,45 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <script src="https://kit.fontawesome.com/96ca92ce66.js" crossorigin="anonymous"></script>
   <title>Test Formsubmit</title>
 </head>
 
 <body>
+  <div class="bloc-contact">
+    <div class="formulaire">
+      <form action="https://formsubmit.co/c60d1565791e460cbf8936766406f78e" method="POST">
+        <input type="hidden" name="_next" value="succes.html">
+        <div class="">
+          <label for="name" class="form-label"></label>
+          <input class="form-input" type="text" name="name" id="nom" placeholder="Nom" required />
+        </div>
 
-  <div class="formulaire">
-    <form action="https://formsubmit.co/c60d1565791e460cbf8936766406f78e" method="POST">
-      <div class="">
-        <label for="name" class="form-label"></label>
-        <input class="form-input" type="text" name="name" id="nom" placeholder="Nom" required />
-      </div>
+        <div>
+          <label for="email" class="form-label"></label>
+          <input class="form-input" type="email" name="email" id="email" placeholder="Email" required />
+        </div>
 
-      <div>
-        <label for="email" class="form-label"></label>
-        <input class="form-input" type="email" name="email" id="email" placeholder="Email" required />
-      </div>
+        <div>
+          <label for="sujet" class="form-label"></label>
+          <input class="form-input" type="text" name="subject" id="sujet" placeholder="Sujet" required />
+        </div>
 
-      <div>
-        <label for="sujet" class="form-label"></label>
-        <input class="form-input" type="text" name="subject" id="sujet" placeholder="Sujet" required />
-      </div>
+        <div>
+          <label for="message" class="form-label"></label>
+          <textarea rows="8" cols="33" class="form-input input-message" type="text" name="message" id="message"
+            placeholder="Votre message" required></textarea>
+        </div>
 
-      <div>
-        <label for="message" class="form-label"></label>
-        <textarea rows="8" cols="33" class="form-input input-message" type="text" name="message" id="message"
-          placeholder="Votre message" required></textarea>
-      </div>
-
-      <div class="bouton">
-        <Button title="Envoyer" type="submit" id="btn-envoyer" value="envoyer" />
-      </div>
-    </form>
+        <div class="bouton">
+          <button title="Envoyer" type="submit" id="btn-envoyer" value="envoyer">Envoyer</button>
+        </div>
+      </form>
+    </div>
   </div>
-
 
 </body>
 
